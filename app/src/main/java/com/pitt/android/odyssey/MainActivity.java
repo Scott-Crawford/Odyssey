@@ -302,6 +302,7 @@ public class MainActivity extends AppCompatActivity {
                         if(mToast!=null){
                             mToast.cancel();
                         }
+                        //Comment out the next two lines in order to get rid of the toasts showing the serial input. Required in order to see keyboard inputs
                         mToast=Toast.makeText(mContextWeakReference.get(), valueString, Toast.LENGTH_LONG);
                         mToast.show();
                         values = valueString.split(",");
